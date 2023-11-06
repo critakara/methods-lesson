@@ -5,10 +5,14 @@
 
 
 def do_calc # yield just acts as a blind return? what is this for? for classes i assume?
-  yield
+  result = yield(7,9)
+  puts result
 end
 
-puts do_calc { 7 + 9 }
+do_calc do
+  |a,b| a+b
+end
 
-puts do_calc { 7 * 9 }
-
+do_calc do
+  |a,b| a*b
+end

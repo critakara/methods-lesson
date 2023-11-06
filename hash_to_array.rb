@@ -6,7 +6,7 @@
 # function turn thing into hash, return hash store hash in array
 # do this 5 times
 
-def toArray(hash)
+def to_array(hash)
   key = hash.keys
   value = hash.values
   
@@ -23,4 +23,4 @@ for i in 0..4
   fiveHash.store(key, value)
 end
   
-print toArray(fiveHash)
+print to_array(fiveHash)

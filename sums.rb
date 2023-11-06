@@ -25,9 +25,9 @@ class Sum2
   end
 end
 
-sumFirst = Sum1.new(5, 6)
-sumSecond = Sum2.new(5, 6)
+sum_first = Sum1.new(5, 6)
+sum_second = Sum2.new(5, 6)
 
-puts sumFirst.total
-puts sumSecond.new_total
+puts sum_first.total
+puts sum_second.new_total
 

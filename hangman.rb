@@ -18,19 +18,19 @@ def hangman(word, letter)
   # naively check if exists in work via include
   # if so split word into an array, find the matches
   # make string x__x__ return
-  workingWord = [] # intialize the array for the partial word
+  working_word = [] # intialize the array for the partial word
   j = 0 # initialize and indexer to make sure im getting the letters in the correct plas
   locArray = word.chars # split the array into chars so i can check each one by one
     for i in locArray
       if letter[0] == i
-        workingWord[j] = letter[0]
+        working_word[j] = letter[0]
         j += 1
       else
-        workingWord[j] = "_"
+        working_word[j] = "_"
         j += 1
       end
     end
-    finalWord = workingWord.join("")
+    finalWord = working_word.join("")
     return finalWord
 end
 

@@ -5,7 +5,7 @@ def divisible()
 
   for i in 1..100
     case
-    when i % 2 == 0, i % 3 == 0, i % 5 == 0
+    when i % 2 == 0 or i % 3 == 0 or i % 5 == 0
       numbers.push(i)
     end
   end
